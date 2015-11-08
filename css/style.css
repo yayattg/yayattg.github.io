@@ -1,0 +1,91 @@
+body {
+	background-color: steelblue;
+	/*colorpicker.com to find a Hex, RGB, RGBA*/
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: 50% 50%;
+	font-family: Helvetica, Arial, sans-serif; /*specific fallbacks*/
+}
+
+.main {
+		max-width: 600px;
+		background-color: rgba(255,255,255,0.8);
+		margin: 0 auto;
+		padding: 30px;
+		border-radius: 10px;
+		box-shadow: 10px 10px 10px 10px red; /*horizontal (neg for left), verticical, blurriness, shadow size, color*/
+		/*box-shadow: 0 0 20px 5px rgba(255,255,255,0.8);*/
+}
+h1 {
+	font-family: 'Nosifer', cursive;
+	background-color: yellow;
+	text-align: center;
+	font-size: 50px;
+	margin: 0;
+	width: 90%;
+	height: 100px;
+	text-shadow: 5px 5px 10px purple; /*the difference b/t box is missing the size*/
+
+}
+
+h2 {
+	text-align: center!important;
+	text-align: right;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	font-weight: normal;
+
+}
+
+h3{
+	text-decoration: underline;
+	margin-bottom: 0;
+}
+
+h3:hover {
+	color: #454545;
+	cursor:pointer;
+}
+
+img {
+	border-radius: 50% 0 25% 10%; /*or just one percentage for round, this needs to be clockwise*/
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+	border: 10px dashed yellow; /*dashed, dotted, */
+}
+
+img:hover {
+	cursor:pointer;
+}
+
+h3:first-of-type {text-decoration: line-through;}
+
+/*li:first-of-type {text-decoration: line-through;}*/
+
+li:nth-child(2) {background-color: yellow;} 
+
+p {
+	text-align: justify; /*justify will try to fit in some extra word from next line into the previous one*/
+}
+
+p,
+ul,
+ol {line-height: 1.5;
+	list-style: none;
+	padding-left: 0;
+	}
+
+a {
+	color: blue;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:focus,
+a:hover {
+	color: purple;
+	text-decoration: underline;
+}
